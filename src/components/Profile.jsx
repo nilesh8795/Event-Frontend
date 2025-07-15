@@ -10,9 +10,7 @@ function Profile() {
       const amount = 100 // ₹100
 
       // Step 1: Create Razorpay order
-      const { data } = await axios.post(
-        console.log(token);
-        
+      const { data } = await axios.post(        
         'http://localhost:5000/api/wallet/add-money',
         { amount },
         {
